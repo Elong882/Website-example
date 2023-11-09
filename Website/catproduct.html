@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dainty doodle designs</title>
+    <link rel="icon" type="icon/png" href="logo.png" >
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+
+    
+    <div class="container-productwholeclick">
+        <div class="navigation2">
+            <img src="logo2.png" class="logo" alt="">
+            <img src="logoname.png" class="logotext" alt="">
+            <nav>
+                <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href = "aboutus.html">About</a></li>
+                <li><a href = "help.html">Help</a></li>
+                <li><a href = "products.html">Products</a><li>
+                </ul>
+
+            </nav>
+            
+        </div>
+        <div class="producttext">
+        <h1>Cat framed portrait</h1>
+        <h2>£18.99</h2>
+        <p>Free 1st class delivery on all orders</p>
+        <p>We provide a high quality framed print of your precious pets,<br>
+             and use only the best high resolution paper/inks.
+             The result <br>is a lifelike portrait that stands out from our competitors.<br>
+            Send your favourite picture of your cat(s) to us at checkout<br> and leave the magic to us.</p>
+        </div>
+        <div class="customerimagescontainer">
+            <div class="slider">
+                <div class="radio-cat">
+                    <span onclick="slide(1)"></span>
+                    <span onclick="slide(2)"></span>
+
+                </div>
+                <div id="sliderimages">
+                       <img src="catpicture.jpeg" class="pictureslider" alt="">
+                       <img src="bluebell_product2.jpeg" class="pictureslider" alt="">
+                </div>
+                <div class="sliders">
+                    <div onclick="slide_direction(-1)" class="slider1" id="previousslider">
+                    <ion-icon name="arrow-back-outline" class="previousslider-cat"></ion-icon>
+                    </div>
+                    <div onclick="slide_direction(1)" class="slider2" id="nextslider">
+                    <ion-icon name="arrow-forward-outline" class="nextslider-cat"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+    <div class="subscribeemail_containerbottom">
+
+    </div>
+    <div class="footer">
+          <div class="firstcolumn-footer">
+               <h4>Our Etsy page:</h4>
+                  <a href="https://www.etsy.com/uk/shop/Daintydoodledesignsx?ref=l2-about-shopname">
+
+                     <img src ="etsylogo.png" class="etsylogo" alt="">
+                  </a>
+
+          </div>
+          <div class="secondcolumn-footer">
+            <h4>Contact us:</h4>
+              <a href="help.html">
+                
+               <ion-icon name="mail-outline" class="mailicon"></ion-icon>
+               <ion-icon name="call-outline" class="phoneicon"></ion-icon>
+
+              </a>
+          </div>
+
+    </div>
+    <script src = "productclick.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

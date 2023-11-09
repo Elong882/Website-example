@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dainty doodle designs</title>
+    <link rel="icon" type="icon/png" href="logo.png" >
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+
+    <div class="container_aboutus">
+        <div class="navigation2">
+            <img src="logo2.png" class="logo" alt="">
+            <img src="logoname.png" class="logotext" alt="">
+            <nav>
+                <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href = "#">About</a></li>
+                <li><a href = "help.html">Help</a></li>
+                <li><a href = "products.html">Products</a><li>
+                </ul>
+
+            </nav>
+            </div>
+            
+        <div class="aboutuscontainer">
+            <div class="aboutustitle">
+                <h1>Hello!</h1>
+                <p>We are a small family business based in Yorkshire, UK, and have <br>
+                lots of love for all animals and have pride in creating prints 
+                 and ensuring<br> your photos come to life.
+                Our prints create lasting memories of your <br>precious pets and we love hearing all 
+                the positive feedback from our customers.</p>
+                <h6>-The Dainty Doodle team</h6>
+                <img src="logo2.png" class="aboutuslogosign" alt="">
+            </div>
+            <img src = "mainaboutusimage.png" class="aboutusimage" alt="">
+        </div>
+
+    </div>
+    
+    <div class="subscribeemail_containerbottom">
+        
+        <header>Sign up to our email list for discounts!</header>
+        <form action="readdata.php" method="post">
+           <input id="email" type="email" name ="email" placeholder="Enter email" class="subscribeinput" required>
+           <button id="buttonemail" type="submit" onclick="sendEmail()">Subscribe</button>
+        </form>
+    </div>
+    
+
+    <div class="footer">
+          <div class="firstcolumn-footer">
+               <h4>Our Etsy page:</h4>
+                  <a href="https://www.etsy.com/uk/shop/Daintydoodledesignsx?ref=l2-about-shopname">
+
+                     <img src = "etsylogo.png" class="etsylogo" alt="">
+                  </a>
+
+          </div>
+          <div class="secondcolumn-footer">
+            <h4>Contact us:</h4>
+              <a href="help.html">
+                
+               <ion-icon name="mail-outline" class="mailicon"></ion-icon>
+               <ion-icon name="call-outline" class="phoneicon"></ion-icon>
+
+              </a>
+          </div>
+
+    </div>
+    <script src="sendemail.js"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+   (function(){
+      emailjs.init("UOV29crgEd6OSBLSM");
+   })();
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+

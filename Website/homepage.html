@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dainty doodle designs</title>
+    <link rel="icon" type="icon/png" href="logo.png" >
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container-home">
+        <div class="navigation2">
+            <img src="logo2.png" class="logo" alt="">
+            <img src="logoname.png" class="logotext" alt="">
+            <nav>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href = "aboutus.html">About</a></li>
+                <li><a href = "help.html">Help</a></li>
+                <li><a href = "products.html">Products</a><li>
+                </ul>
+
+            </nav>
+            
+        </div>
+        
+            <div class="text-box">
+                <h1>Personalised pet portraits</h1>
+                <p><br>Creating a bespoke print of your pets delivered straight to your door,<br>
+                uniquely designed and created by digital software.<br>
+                Beautiful gifts for any occcasion.</p>
+                <a href="products.html">Shop products</a>
+                
+            </div>
+            <img src="featureimage.png" class="mainimage" alt="">
+
+    </div>
+            <div class ="howtoordercontainer">
+            <img src ="containerdogframe.png" class="dogframeimage" alt="">
+               <h1>How to order:</h1>
+               <p>Ordering is quick and easy! Simply browse our products, <br> select your background colour, print size and frame colour <br>
+               and send us your pet picture at checkout! </p>
+        
+     
+        </div>
+        <div class="reviewscontainer">
+            <header><strong>See our reviews:</strong></header>
+            <a href= "https://www.etsy.com/uk/shop/Daintydoodledesignsx?ref=l2-about-shopname#reviews">
+               <img src="review.jpeg" class="reviewicon" alt="">
+            </a>
+        
+        </div>
+    
+
+    <div id="cover" class="overlay"></div>
+    <div class="popup">
+        <img src="popup_icon.png" class="popupicon" alt="">
+        <h1>Subscribe to our email list!</h1>
+        <h4> Subscribe for exclusive news and information</h4>
+        <form action="readdata.php" method="post">
+           <input id="email" type="email" name ="email" placeholder="Enter email" class="subscribeinputpopup" required>
+           <button id="buttonemail" type="submit" class="subscribepopupbtn" onclick="sendEmail()">Subscribe</button>
+        </form>
+    
+        <ion-icon name="close-outline" id="close" class="closebuttonpopup"></ion-icon>
+    </div>
+    
+
+    <div class="footer">
+          <div class="firstcolumn-footer">
+               <h4>Our Etsy page:</h4>
+                  <a href="https://www.etsy.com/uk/shop/Daintydoodledesignsx?ref=l2-about-shopname">
+
+                     <img src = "etsylogo.png" class="etsylogo" alt="">
+                  </a>
+
+          </div>
+          <div class="secondcolumn-footer">
+            <h4>Contact us:</h4>
+              <a href="help.html">
+                
+               <ion-icon name="mail-outline" class="mailicon"></ion-icon>
+               <ion-icon name="call-outline" class="phoneicon"></ion-icon>
+              </a>
+          </div>
+          
+
+    </div>
+    
+    <script src="mainjs.js"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+   (function(){
+      emailjs.init("UOV29crgEd6OSBLSM");
+   })();
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+
+</body>
+</html>
+

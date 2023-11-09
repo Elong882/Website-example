@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dainty doodle designs</title>
+    <link rel="icon" type="icon/png" href="logo.png" >
+    <link rel="stylesheet" href="main.css">
+</head>
+<body> 
+    <div class="helpcontainer">
+        <div class="navigation2">
+            <img src="logo2.png" class="logo" alt="">
+            <img src="logoname.png" class="logotext" alt="">
+            <nav>
+                <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href = "aboutus.html">About</a></li>
+                <li><a href = "#">Help</a></li>
+                <li><a href = "products.html">Products</a><li>
+                </ul>
+
+            </nav>
+            
+        </div>
+
+        <div class="deliveryinfocontainer">
+            <h2>Delivery policies</h2>
+            <div class ="deliveryinfocontainer2">
+            <h4>• Shipping time of 3-5 business days</h4>
+            <h4>• Dispatched from United Kingdom and shipped worldwide</h4>
+            </div>
+        </div>
+        
+        <div class="returninfocontainer">
+            <h2>Returns and cancellations</h2>
+            <div class="returninforcontainer2">
+            <h4>• Returns and cancellations accepted<br>simply contact us using our details below</h4>
+            <h4>• Cancellations accepted within the first 24 hours of purchase</h4>
+            </div>
+        </div>
+        <div class="contactushelpcontainer">
+            <h2>Contact us</h2>
+            <div class="mailcontainerhelp">
+                <ion-icon name="mail-outline" class="contacthelpmailicon"></ion-icon>
+                <h4>daintydoodledesignsx@gmail.com</h4>
+            </div>
+            <div class="phonecontainerhelp">  
+                <ion-icon name="call-outline" class="contacthelpphoneicon"></ion-icon>
+                <h4>+447711 268535</h4>
+            </div>
+            <div class="etsycontainerhelp">
+                <img src="etsylogo.png" class="contacthelpetsylogo" alt="">
+                <h4>daintydoodledesignsx</h4>
+            </div>
+        </div>
+        <div class="faqcontainer">
+            <h2>Common FAQs</h2>
+        <div class="faq1container">
+          <h3>• Can we include more than one pet in the print?</h3>
+          <p>You can add up to four pets in one print.</p>
+        </div>
+        <div class="faq2container">
+            <h3>• Do you sell black frames?</h3>
+            <p>You can choose between a white or black frame for your print when adding the product to your basket.</p>
+        </div>
+        
+        <div class="faq3container">
+            <h3>• Do any accessories (e.g collars, bows) appear on the print?</h3>
+            <p>We will include every accessory on the image sent unless asked otherwise.</p>
+        </div>
+        </div>
+    </div>
+   
+    
+    <div class="subscribeemail_containerbottom">
+        
+        <header>Sign up to our email list for discounts!</header>
+        <form action="readdata.php" method="post">
+           <input id="email" type="email" name ="email" placeholder="Enter email" class="subscribeinput" required>
+           <button id="buttonemail" type="submit" onclick="sendEmail()">Subscribe</button>
+        </form>
+    </div>
+    
+
+    <div class="footer">
+          <div class="firstcolumn-footer">
+               <h4>Our Etsy page:</h4>
+                  <a href="https://www.etsy.com/uk/shop/Daintydoodledesignsx?ref=l2-about-shopname">
+
+                     <img src = "etsylogo.png" class="etsylogo" alt="">
+                  </a>
+
+          </div>
+          <div class="secondcolumn-footer">
+            <h4>Contact us:</h4>
+              <a href="help.html">
+                
+               <ion-icon name="mail-outline" class="mailicon"></ion-icon>
+               <ion-icon name="call-outline" class="phoneicon"></ion-icon>
+
+              </a>
+          </div>
+
+    </div>
+    <script src="sendemail.js"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+   (function(){
+      emailjs.init("UOV29crgEd6OSBLSM");
+   })();
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
